@@ -17,7 +17,7 @@
 
     <!-- For syntax highlighting -->
     <!-- light editor-->
-    <link rel="stylesheet" href="lib/css/light.css">
+    <link rel="stylesheet" href="reveal/lib/css/light.css">
     <!-- dark editor<link rel="stylesheet" href="reveal/lib/css/dark.css">-->
 
     <!-- If use the PDF print sheet so students can print slides-->
@@ -52,7 +52,7 @@
             </section>
             <section>
                 <h2>Download workshop files</h2>
-                <p>If you have not already downloaded the files for this workshop - please download them at gdiboulder.com/bootstrap</p>
+                <p>If you have not already downloaded the files for this workshop - please download them at <a href="http://gdiboulder.com/bootstrap" target="blank">gdiboulder.com/bootstrap</a></p>
             </section>
             <section>
                 <h2>What we will be covering in this workshop</h2>
@@ -73,34 +73,35 @@
                 </ol>
             </section>
             <section data-background="#f05b62">
-                <h1 style="color: #fafafa;">What is Bootstrap?</h1>
+                <h2 style="color: #fafafa;">What is Bootstrap?</h2>
             </section>
             <section>
+                <h2>What is Bootstrap?</h2>
                 <p>Twitter's Bootstrap is a frontend UI (user interface) framework that speeds up the development of new websites and web applications.</p>
+                <img src="images/devices.png" />
             </section>
             <section>
                 <p>It is the #1 project on github with 65,000+ stars and over 23,000 forks</p>
-            </section>
-            <section>
                 <p>Bootstrap is an open source project on GitHub, meaning anyone can contribute to its progress.</p>
-            </section>
-            <section>
-                <p>It has been used by NASA, Healthcare.org &amp; MSNBC</p>
+                <img src="images/github.png" />
             </section>
             <section data-background="#f05b62">
-                <h1 style="color: #fafafa;">What is a front-end framework?</h1>
+                <h2 style="color: #fafafa;">What is a front-end framework?</h2>
             </section>
             <section>
+                <h2>What is a front-end framework?</h2>
                 <p>A front-end web development framework is simply a collection of production-ready HTML/CSS/JavaScript components that we can use in our designs.</p>
             </section>
             <section>
+                <h2>What is a front-end framework?</h2> 
                 <p>Bear in mind that Bootstrap is not just a CSS grid. It also comes with tons of features that you can use to build a fully-functional website.</p>
             </section>
 
             <section data-background="#f05b62">
-                <h1 style="color: #fafafa;">Why would I want to use Bootstrap?</h1>
+                <h2 style="color: #fafafa;">Why would I want to use Bootstrap?</h2>
             </section>
             <section>
+                <h2>Why would I want to use Bootstrap?</h2> 
                 <p>Bootstrap is designed to be responsive, which means that your HTML elements will respond to changes in screen size.</p>
             </section>
             <section>
@@ -116,37 +117,39 @@
                 <img src="images/iPhone.png">
             </section>
             <section>
+                <h2>Why would I want to use Bootstrap?</h2>
                 <p>Bootstrap is also mobile-first, which means that certain mobile-friendly styles (like the ability to zoom in) are included in the core files.</p>
             </section>
             <section data-background="#f05b62">
-                <h1 style="color: #fafafa;">What comes with Bootstrap?</h1>
+                <h2 style="color: #fafafa;">What comes with Bootstrap?</h2>
             </section>
             <section>
-	                <h3>Download Files</h3>
+	                <h2>Download Files</h2>
 	                <p>You can download all the necessary Bootstrap files from <a href="http://getboostrap.com" target="blank"> getbootstrap.com</a> or from the <a href="https://github.com/twbs/bootstrap" target="blank">Bootstrap repo</a> on GitHub.</p>
-	                <p style="font-style: italic;">(We included all of these in your Example Files folder, so no need to download from Bootstrap today!)</p>
+	                <small><i>(We included all of these in your Example Files folder, so no need to download from Bootstrap today!)</i></small>
             </section>
             <section>
-	               	<h3>The File Structure</h3>
+	               	<h2>The File Structure</h2>
 	                <img src="images/bootstrap-files.png">
             </section>
             <section>
-	                <h3>Base CSS:</h3>
+	                <h2>Base CSS:</h2>
 	                <p>Styles for common HTML elements, including the grid system, typography, tables, forms, and buttons.</p>
             </section>
             <section>
-	                <h3>Components:</h3>
+	                <h2>Components:</h2>
 	                <p>Styles for common user interface elements, like tabs & pills, breadcrumbs, navigation bars, alerts, page headers, and more.</p>
             </section>
             <section>
-	                <h3>JavaScript Plugins:</h3>
+	                <h2>JavaScript Plugins:</h2>
 	                <p>Similar to components, Bootstrap uses JavaScript plugins for tooltips, popovers, carousels, modal windows, and other elements</p>
             </section>
             <section>
-                <p>Check out some of the components by opening the example.html file in your browser window.</p>
+                    <h2>See it in action!</h2>
+                <p>Check out some of the components by opening the <b>example.html</b> file in your browser window.</p>
             </section>
             <section data-background="#f05b62">
-                <h1 style="color: #fafafa;">The Bootstrap Grid System</h1>
+                <h2 style="color: #fafafa;">The Bootstrap Grid System</h2>
             </section>
             <section>
                 <p>Bootstrap is based on a 12-column grid, and uses CSS classes to decide the width of each element.</p>
@@ -162,11 +165,22 @@
 				    <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
 				 </ul>
             </section>
+            <section>
+                <h2>Code Example</h2>
+<pre><code class="xml">
+<div class="container">
+    <div class="row">
+        [CONTENT FOR ROW]
+    </div>
+</div></code></pre>
+</section>
                 <section>
+                <h2>See it in action!</h2>
                 <p>Open up columns.html in your browser window.</p>
                 <p>Resize your browser to see where the columns break to fit 100% of the width.</p>
             </section>
             <section>
+                <h2>See it in action!</h2>
                 <p>Open up columns-fluid.html in your browser window.</p>
                 <p>Resize your browser to see where the columns break to fit 100% of the width.</p>
             </section>
@@ -179,8 +193,46 @@
                 <p>If you want to have two 50% columns on a mobile phone, you would use <code>.col-xs-6</code> nested in a <code>.row</code>, and the rows would be consistent on every device...</p>
             </section>
             <section>
-                <p>...and if you want to have four 25% columns on a desktop, and would like them to break to 100% on a tablet, you would use <code>.col-md-4</code> nested in a <code>.row</code>.</p>
+            <h2>Two 50% width columns</h2>
+<pre><code class="xml">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            [COLUMN 1 CONTENT]
+        </div>
+        <div class="col-xs-6">
+            [COLUMN 2 CONTENT]
+        </div>
+    </div>
+</div></code></pre>
+<p><small>Two 50% columns on a mobile phone</small></p>
+</section>
+
+            <section>
+                <p>If you want to have four 25% columns on a desktop, and would like them to break to 100% on a tablet, you would use <code>.col-md-4</code> nested in a <code>.row</code>.</p>
             </section>
+            <section>
+            <h2>Four 25% width columns</h2>
+<pre><code class="xml">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            [COLUMN 1 CONTENT]
+        </div>
+        <div class="col-md-4">
+            [COLUMN 2 CONTENT]
+        </div>
+        <div class="col-md-4">
+            [COLUMN 3 CONTENT]
+        </div>
+        <div class="col-md-4">
+            [COLUMN 4 CONTENT]
+        </div>
+    </div>
+</div></code></pre>
+<p><small>Four 25% columns on desktop that break to 100% width on a tablet.</small></p>
+
+</section>
 			<section>
 			<h2>Develop it!</h2>
 			<p>Open index.html in Sublime Text and make a simple, two-column layout.</p>
@@ -188,47 +240,86 @@
 			<p>Resize your browser to see what happens.</p>
 			</section>
             <section data-background="#f05b62">
-                <h1 style="color: #fafafa;">Bootstrap Navigation</h3>
+                <h2 style="color: #fafafa;">Bootstrap Navigation</h2>
             </section>
             <section>
                 <p>Bootstrap has 4 different types of navigation</p>
             </section>
             <section>
-                <p><strong>1. Default</strong></p>
+                <h2>1. Default</h2>
                 <p>Default Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>
+<pre><code class="xml">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    ...
+  </div>
+</nav>
+</code></pre>  
+
             </section>
             <section>
-                <p><strong>2. Fixed to Top</strong></p>
-                <p>Add <code>.navbar-fixed-top</code> and include a <code>.container</code> or <code>.container-fluid</code> to center and pad navbar content. (Body padding required)</p>
+                <h2>2. Fixed to Top</h2>
+                <p>Add <code>.navbar-fixed-top</code> and include a <code>.container</code> or <code>.container-fluid</code> to center and pad navbar content.</p>
+<pre><code class="xml">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    ...
+  </div>
+</nav>
+</code></pre>  
+<p>Body Padding Required:</p>
+<pre><code class="css">
+body { padding-top: 70px; }
+</code></pre>
             </section>
             <section>
-                <p><strong>2. Fixed to Bottom</strong></p>
-                <p>Add <code>.navbar-fixed-bottom</code> and include a <code>.container</code> or <code>.container-fluid</code> to center and pad navbar content. (Body padding required)</p>
+                <h2>2. Fixed to Bottom</h2>
+                <p>Add <code>.navbar-fixed-bottom</code> and include a <code>.container</code> or <code>.container-fluid</code> to center and pad navbar content.</p>
+<pre><code class="xml">
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  <div class="container">
+    ...
+  </div>
+</nav>
+</code></pre>  
+<p>Body Padding Required:</p>
+<pre><code class="css">
+body { padding-bottom: 70px; }
+</code></pre>
             </section>
             <section>
-                <p><strong>2. Static Top</strong></p>
+                <h2>2. Static Top</h2>
                 <p>Full-width navbar that scrolls away with the page.</p>
+<pre><code class="xml">
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    ...
+  </div>
+</nav>
+</code></pre>  
             </section>
 			<section>
 			<h2>Develop it!</h2>
-			<p>Add a navbar to index.html.</p>
+			<p>Add a navbar of your choice to index.html.</p>
 			</section>
             <section data-background="#f05b62">
-                <h1 style="color: #fafafa;">Jumbotron</h2>
+                <h2 style="color: #fafafa;">Jumbotron</h2>
             </section>
             <section>
+                <h2>Jumbotron</h2>
                 <p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
             </section>
 			<section>
-			<h2>Develop it!</h2>
-			<p>Add a jumbotron to index.html.</p>
-			<p>In the jumbotron, include a headline, a paragraph, and a button.</p>
+    			<h2>Develop it!</h2>
+    			<p>Add a jumbotron to index.html.</p>
+    			<p>In the jumbotron, include a headline, a paragraph, and a button.</p>
 			</section>
             <section data-background="#f05b62">
-                <h1 style="color: #fafafa;">Images Within Columns</h1>
+                <h2 style="color: #fafafa;">Images Within Columns</h2>
             </section>
             <section>
-            <p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.</p>
+                <h2>Images Within Columns</h2>
+                <p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.</p>
             </section>
              <section>
             <p>Bootstrap also includes the following classes to make styling your images easier:</p>
@@ -237,6 +328,11 @@
 	            <li><code>.img-circle</code> takes a square image and applies the style <code>border-radius: 50%;</code></li>
 	            <li><code>.img-thumbnail</code> applies a border with rounded edges to the image</li>
             </ul>
+<pre><code class="xml">
+<img src="puppy.jpg" class="img-rounded" alt="Rounded Puppy" />
+<img src="puppy.jpg" class="img-circle" alt="Circle Puppy" />
+<img src="puppy.jpg" class="img-thumbnail" alt="Puppy Thumbnail" />
+</code></pre>
             </section>
 			<section>
 			<h2>Develop it!</h2>
