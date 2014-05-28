@@ -52,11 +52,31 @@
               <h2>Welcome!</h2>
               <h4 class="blue">Wifi Info</h4>
               <p><strong>Network:</strong> Simple Energy Guest</p>
-              <p><strong>Password:</strong> domorefaster </p>
+              <p><strong>Password:</strong> domorefaster </p><br/>
+              <h3>Download workshop files</h3>
+              <p>If you have not already downloaded the files for this workshop - please download them at <a href="http://gdiboulder.com/bootstrap" target="blank">gdiboulder.com/bootstrap</a></p>
             </section>
             <section>
                 <h2>Thanks to our sponsor:</h2>
                 <img src="images/sponsors/simpleenergy.png" style="border:none; width: 400px;"/>
+            </section>
+            <section>
+                <h2>Meet your instructor: Cara Jo Miller</h2>
+                <ul>
+                    <li>Co-founder: Girl Develop It Boulder</li>
+                    <li>Lead Designer: Simple Energy</li>
+                    <li>E-mail: carajo@girldevelopit.com</li>
+                    <li>Twitter: @corrinajo</li>
+                    <li>Lover of all things glitter</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Meet your instructor: Caitlin McKenna</h2>
+                <ul>
+                    <li>Web Developer: Insight Designs</li>
+                    <li>Twitter: @caitlinemckenna</li>
+                    <li>Spotify Playlist Curator</li>
+                </ul>
             </section>
             <section>
                 <h2>Download workshop files</h2>
@@ -166,9 +186,11 @@
             </section>
             <section>
                 <p>Bootstrap is based on a 12-column grid, and uses CSS classes to decide the width of each element.</p>
+                <img src="images/12-grid.png" alt="12 columns" />
             </section>
                 <section>
-                <p>Each element can take up between 1-12 columns worth of space...<br> and each element within that element can take up between 1-12 columns worth of space...<br>and each element within that element can take up between 1-12 columns worth of space... </p>
+                <p>Each element can take up between 1-12 columns worth of space...<!-- <br> and each element within that element can take up between 1-12 columns worth of space...<br>and each element within that element can take up between 1-12 columns worth of space... </p> -->
+                <img src="images/12-grid-overlay.png" alt="12 columns" />
             </section>
             <section>
             <h2>Some Rules:</h2>
@@ -177,6 +199,7 @@
 				    <li>Use rows (<code>.row</code>) to create horizontal groups of columns.</li>
 				    <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
 				 </ul>
+
             </section>
             <section>
                 <h2>Code Example</h2>
@@ -204,6 +227,7 @@
             <section>
                 <h2>In other words...</h2>
                 <p>If you want to have two 50% columns on a mobile phone, you would use <code>.col-xs-6</code> nested in a <code>.row</code>, and the rows would be consistent on every device...</p>
+                <img src="images/12-grid-2-col.png" />
             </section>
             <section>
             <h2>Two 50% width columns</h2>
@@ -223,6 +247,7 @@
 
             <section>
                 <p>If you want to have four 25% columns on a desktop, and would like them to break to 100% on a tablet, you would use <code>.col-md-4</code> nested in a <code>.row</code>.</p>
+                <img src="images/12-grid-4-col.png" />
             </section>
             <section>
             <h2>Four 25% width columns</h2>
@@ -248,9 +273,10 @@
 </section>
 			<section>
 			<h2>Develop it!</h2>
-			<p>Open index.html in Sublime Text and make a simple, two-column layout.</p>
-			<p><strong>Extra credit:</strong> make a three-column layout.</p>
-			<p>Resize your browser to see what happens.</p>
+			<p>1. Open index.html in Sublime Text and make a simple, two-column layout.</p>
+			<p>1a. <strong>Extra credit:</strong> make a three-column layout.</p>
+            <p>2. Don't forget to put some content in your columns.</p>
+			<p>3. Resize your browser to see what happens.</p>
 			</section>
             <section data-background="#f05b62">
                 <h2 style="color: #fafafa;">Bootstrap Navigation</h2>
@@ -321,6 +347,17 @@ body { padding-bottom: 70px; }
             <section>
                 <h2>Jumbotron</h2>
                 <p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
+                <img src="images/jumbotron.png" alt="jumbotron" />
+            </section>
+            <section>
+            <h2>Code Example</h2>
+
+<pre><code class="xml">
+<div class="jumbotron">
+  <h1>Hello, world!</h1>
+  <p>...</p>
+</div>
+</code></pre>
             </section>
 			<section>
     			<h2>Develop it!</h2>
@@ -348,14 +385,80 @@ body { padding-bottom: 70px; }
 </code></pre>
             </section>
 			<section>
-			<h2>Develop it!</h2>
-			<p>Add images to your columns</p>
-			<p>(hint: we included some puppy photos in the images folder of your example files!)</p>
-			<p>(hint x2: remember to make your <code>img src=""</code> relative!)</p>
+    			<h2>Develop it!</h2>
+    			<p>Add images to your columns</p>
+    			<p>(hint: we included some puppy photos in the images folder of your example files!)</p>
+    			<p>(hint x2: remember to make your <code>img src=""</code> relative!)</p>
 			</section>
+             <section data-background="#f05b62">
+                <h2 style="color: #fafafa;">BUTTTTONS!</h2>
+            </section>
+            <section>
+                <h2>Buttons!</h2>
+                <p>Bootstrap comes with some amazing button classes for you to use out of the box. We all know that making those perfectly subtle rounded cornered buttons, is a pain.</p>
+                <img src="images/buttons-all.png" alt="" />
+            </section>
+            <section>
+                <h2>Buttons</h2>
+<pre><code class="xml">
+<!-- Standard button -->
+<button type="button" class="btn btn-default">Default</button>
+</code></pre>
+<p>The <code>.btn</code> class can be applied to either a<br/> <code>&lt;button></code> or a <code>&lt;a></code></p>
+
+            </section>
+            <section>
+                <h2>But wait - there's more!</h2>
+                <p>Bootstrap has different classes for providing extra visual weight and identifig the primary action in a set of buttons.</p>
+<pre><code class="xml">
+<!-- Primary Action -->
+<button type="button" class="btn btn-primary">Primary</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-warning">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">Danger</button>
+</code></pre>
+
+    </section>
+            <section>
+                <h2>Fancy some bigger or smaller buttons?</h2>
+                <p>Sometimes you need a really big button for that call to action.</p>
+                <img src="images/button-sized.png" alt="" />
+            </section>
+            <section>
+                <h2>Add a size class to buttons</h2>
+                <p>For larger or smaller buttons add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.
+<pre><code class="xml">
+<button type="button" class="btn btn-primary btn-lg">
+Large button</button>
+
+<button type="button" class="btn btn-primary">
+Default button</button>
+
+<button type="button" class="btn btn-primary btn-sm">
+Small button</button>
+
+<button type="button" class="btn btn-primary btn-xs">
+Extra small button</button>
+</code></pre>
+            </section>
+            <section>
+                <h2>Develop It!</h2>
+                <p>Add buttons to your columns.</p>
+                <p>Add a larger button to your jumbotron.</p>
+                <p>Extra Credit: play with the different classes for different colors.</p>
+            </section>
 			<section>
-			<h2>Customize!</h2>
-			<p>Customize your CSS before you even download your Bootstrap files by visiting <a href="http://getbootstrap.com/customize/" target="blank">http://getbootstrap.com/customize/</a></p>			
+    			<h2>Customize!</h2>
+    			<p>Customize your CSS before you even download your Bootstrap files by visiting <a href="http://getbootstrap.com/customize/" target="blank">http://getbootstrap.com/customize/</a></p>			
 			</section>
 			<section>
 			<h2>Customize!</h2>
